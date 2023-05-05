@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="uft-8">
+    <title>
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+
+<body>
+
+
+    <nav>
+        <div>
+            <h1<i class="fa fa-home"></i> nics web page</h1>
+        </div>
+
+        <div>
+            <a href="./contact.html"><i class="fa fa-phone"></i>contact</a>
+            <br>
+            <br>
+            <a href="./index.html"> <i class="fa fa-home"></i> Home</a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- main content -->
+
+
+
+    <H1 class="joke_title">joke generator</H1>
+
+    <h2 id="jokes" class="joke_title">Hey this is a joke</h2>
+
+    <button class="joke_button" onclick="generatejoke()"> press for a joke</button>
+
+
+
+
+
+    <h1></h1>
+    <div class="main content" data-test="hi">
+        <header role="banner">
+            <h1 class="main-heading" onclick="changeName()" class="brown-text" id="intro">N.A.S</h1>
+            <h2 style="width: 250px;height:50px;border:10px double #000000;">Nics website
+    </div>
+    <p class="main content" data-test="hi"></p>
+    <h1>timeeehhhh</h1>
+    <img src="American-Staffordshire-Terrier-close-up.webp" width="400" height="390">
+    <p>I am a student at srb intermediate and i am currently in a mimi course at carleton</p>
+    <h2 onclick="changeName()" class="brown-text" id="intro">reveal</h2>
+    <video src="waterfall-158229 (1).mp4" width=500 height=500 controls=autoplay loop> </video>
+    <video src="" width=500 height=500 controls=autoplay loop> </video>
+    </header>
+
+
+
+    <h2 style="width: 250px;height: 500px;border:10px double #000000;">User details
+        form
+        <form action="" class="myForm" id="myForm">
+            <title>user details form</title>
+            <h6>first-name</h6>
+            <label for="firstName" name="firstName"> </label>
+            <input type="text" name="firstName" id="firstName" placeholder="hey write your name here...">
+
+
+            <h6>email</h6>
+            <label for="email" name="email"> </label>
+            <input type="text" name="email" id="email" placeholder="hey write your email here">
+            <h5>birthday</h5>
+            <label for="birthday" name="birthday"> </label>
+            <input type="text" name="birthday" id="birthday" placeholder="hey write yout birthday here">
+
+            <h6><input type="submit"></h6>
+    </h2>
+
+
+    </form>
+
+
+
+    <footer>
+        <a href="steak.html"> <i class="fa fa-home"></i> Nics steak recipe</a>
+        <a href="soufle.html"> <i class="fa fa-home"></i> Nics soufle recipe</a>
+    </footer>
+
+    </style>
+
+    <p>i am an idiot</p>
+
+
+    <script>
+
+        var first_name = "Nicholas";
+        var last_name = "Modesto-Nelson";
+        var total = 5 + 4;
+        console.log(5 + 4);
+        console.log("last_name");
+        function calculateSum(firstNumber, secondNumber) {
+            var sumOftwonumbers = firstNumber + secondNumber
+
+            return sumOftwonumbers;
+
+
+        }
+
+
+        document.getElementById("myForm").addEventListener("submit", handleFormSubmit);
+
+        var sum = calculateSum(5, 10);
+
+        console.log("sum of two nums", sum)
+
+        var soccer = "⚽"
+        console.log(soccer)
+
+        function changeName() {
+            document.getElementById("intro").innerText = "nics awsome site"
+        }
+
+
+        function handleFormSubmit(event) {
+            event.preventDefault()
+
+            console.log(firstName)
+            console.log(birthday)
+            console.log(email)
+            var first_name = document.getElementById("firstName")
+            var email = document.getElementById("email")
+            var birthday = document.getElementById("birthday")
+
+
+            document.getElementById("intro").innerText = firstName
+
+
+        }
+        var jokesArray = ["What happened to the illegally parked frog… it got toad away", "what did the DNA say to the other DNA? do these genes make me look fat?", "What do you call a bear with no teeth… a gummy bear", "Why can't you play poker in the jungle… there are to many cheetahs", "How much did Santa pay for his sleigh? Nothing, it was on the house", "If you arrest a mime, do you have to tell him he has the right to remain silent?", "Two men walk into a bar. You’d think at least one of them would have ducked", "Where does Princess Leia shop for Father’s Day?At the Darth Maul."];
+
+
+        function generatejoke() {
+            var random_number = Math.random() * 7;
+
+            var random_integer = Math.floor(random_number);
+
+            var random_joke = jokesArray[random_integer];
+
+            document.getElementById("jokes").innerText = random_joke;
+
+        }
+
+
+    </script>
+
+</body>
+
+
+
+
+
+
+</html>
